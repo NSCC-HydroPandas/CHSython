@@ -6,7 +6,7 @@ Python v3.5.4
 CHSython application
 1.	Install Python v3.5.4 from https://www.python.org/downloads/release/python-354/
 2.	Copy CHSython to a newly created C:\Tools folder
-3.	Download the GDAL wheel file https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal:~:text=GDAL%E2%80%913.0.4%E2%80%91cp36%E2%80%91cp36m%E2%80%91win_amd64.whl and add to the Window_Wheel_Files_pip_Geopandas directory
+3.	Download the GDAL wheel file https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal:~:text=GDAL%E2%80%913.0.4%E2%80%91cp35%E2%80%91cp35m%E2%80%91win_amd64.whl and add to the Window_Wheel_Files_pip_Geopandas directory in C:\Tools\CHSython
 4.	Browse to C:\Tools\CHSython and right click the Install.bat and open with Notepad ++ or Notepad
 5.	Browse to the location on your pc where Python has been installed. Choose the Python\Python35\scripts location and copy this location. The pip.exe file within this location will download additional libraries required for the application to function.
 6.	Within Install.bat, replace the default path on Line 1 with the path you just copied from your local machine.

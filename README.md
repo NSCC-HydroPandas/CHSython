@@ -6,18 +6,19 @@ Python v3.5.4
 CHSython application
 1.	Install Python v3.5.4 from https://www.python.org/downloads/release/python-354/
 2.	Copy CHSython to a newly created C:\Tools folder
-3.	Browse to C:\Tools\CHSython and right click the Install.bat and open with Notepad ++ or Notepad
-4.	Browse to the location on your pc where Python has been installed. Choose the Python\Python35\scripts location and copy this location. The pip.exe file within this location will download additional libraries required for the application to function.
-5.	Within Install.bat, replace the default path on Line 1 with the path you just copied from your local machine.
-6.	Save Install.bat
-7.	On line 12 through 16 of Install.bat, verify that the geopandas files are calling the same directory as they are on your local machine. If they are not, then you will need to replace the file location to match that of your local pc. If CHSython was placed in C:\Tools\CHSython as noted above, no changes will be required.
-8.	Save and close Install.bat
-9.	Double click Install.bat to install the CHSython program
-10.	Ensure the CHS Spatial Reference file is added to the C:\ProgramData\CARIS\HIPS and SIPS\11.4\System. Copy from N:\HIC1\Software_Manuals\Caris\HIPS\CHS_Specific_Spatial_ref
-11.	Change paths to match software installed on your computer. Do not change Base 4 (This is only used  during the conversion of Base 5 surfaces to Base 4 surfaces and is no longer required step) 
+3.	Download the GDAL wheel file https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal:~:text=GDAL%E2%80%913.0.4%E2%80%91cp36%E2%80%91cp36m%E2%80%91win_amd64.whl and add to the Window_Wheel_Files_pip_Geopandas directory
+4.	Browse to C:\Tools\CHSython and right click the Install.bat and open with Notepad ++ or Notepad
+5.	Browse to the location on your pc where Python has been installed. Choose the Python\Python35\scripts location and copy this location. The pip.exe file within this location will download additional libraries required for the application to function.
+6.	Within Install.bat, replace the default path on Line 1 with the path you just copied from your local machine.
+7.	Save Install.bat
+8.	On line 12 through 16 of Install.bat, verify that the geopandas files are calling the same directory as they are on your local machine. If they are not, then you will need to replace the file location to match that of your local pc. If CHSython was placed in C:\Tools\CHSython as noted above, no changes will be required.
+9.	Save and close Install.bat
+10.	Double click Install.bat to install the CHSython program
+11.	Ensure the CHS Spatial Reference file is added to the C:\ProgramData\CARIS\HIPS and SIPS\11.4\System. Copy from N:\HIC1\Software_Manuals\Caris\HIPS\CHS_Specific_Spatial_ref
+12.	Change paths to match software installed on your computer. Do not change Base 4 (This is only used  during the conversion of Base 5 surfaces to Base 4 surfaces and is no longer required step) 
 ![image](https://github.com/HydroPanadas/CHSython/assets/80972086/60c22eee-f873-437e-ae9d-4ea1f47f680d)
 
-12.	Starting CHSython Application:
+13.	Starting CHSython Application:
 a.	Right Click on CHSython.py
 b.	Select Edit with Idle 3.5 (64 bit)
 c.	File Menu- Select Run – Run Module or F5

@@ -9,6 +9,7 @@ import numpy as np
 
 
 Caris = ('C:/Program Files/CARIS/HIPS and SIPS/11.3/bin')
+Caris_Env = ('C:/Program Files/CARIS/HIPS and SIPS/11.3/system')
 
 def JD_Conv(M, D, Y):
 

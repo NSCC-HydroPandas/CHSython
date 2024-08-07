@@ -63,7 +63,7 @@ class Application(Frame):
         FTF['Time'] = [d.time() for d in FTF['Date']]
         FTF['Day'] = FTF['Day'].astype(str).str.replace('-','/')
         FTF = FTF.drop(['Date'], axis=1)
-        FTF.rename(columns = {'predictions(m)':'Tide', 'observations(m)':'Tide'}, inplace = True)
+        FTF.rename(columns = {'predictions (m)':'Tide', 'observations (m)':'Tide'}, inplace = True)
         FTF = FTF.reindex(columns= ['Day', 'Time', 'Tide'])
         FTF.to_csv(head_tail[0] + '/Formated_' + head_tail[1], index=False)
 

@@ -1624,7 +1624,7 @@ class Application(Frame):
 
                     Import.write(' ' + SBETF)
                     Import.write(r' file:///' + HDCS_Folder + '/' + HIPSFILE + '/' + HIPSFILE + '.hips')
-                    Import.write(' > ' + Out + '/' + JD + '/2.ImportSBET' + JD + '_' + Year + '.txt' + '\n')
+                    Import.write(' > ' + Out + '/' + JD + '/2.Import_RMS' + JD + '_' + Year + '.txt' + '\n')
 
             ## Creating RMS Parameters
                     Import.write('carisbatch --run ImportHIPSFromAuxiliary --input-format ' +

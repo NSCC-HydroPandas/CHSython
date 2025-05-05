@@ -1624,7 +1624,7 @@ class Application(Frame):
 
                     Import.write(' ' + SBETF)
                     Import.write(r' file:///' + HDCS_Folder + '/' + HIPSFILE + '/' + HIPSFILE + '.hips')
-                    Import.write(' > ' + Out + '/' + JD + '/2.Import_RMS' + JD + '_' + Year + '.txt' + '\n')
+                    Import.write(' > ' + Out + '/' + JD + '/2.Import_SBET' + JD + '_' + Year + '.txt' + '\n')
 
             ## Creating RMS Parameters
                     Import.write('carisbatch --run ImportHIPSFromAuxiliary --input-format ' +
@@ -2777,11 +2777,19 @@ class Application(Frame):
             self.Nav_d.grid(row=1, column=1, sticky=W, padx=1)
 
             ##GPS Height Device
+                   ##Project and Hips Data CSRS
             self.GPSH_D = StringVar()
-            self.GPS_h = Entry(self.KMALL_op, width=10, textvariable=self.GPSH_D, state='disabled')
-            self.GPS_h_text = Label(self.KMALL_op, text="GPS Height Device")
-            self.GPS_h_text.grid(row=2, column=0, sticky=W)
-            self.GPS_h.grid(row=2, column=1, sticky=W, padx=1)
+            gpsh_devs = ['EM_Height', 'SPO']
+
+            self.CRS_pos = ttk.Combobox(self.KMALL_op, values=gpsh_devs, width=10, textvariable=self.GPSH_D)
+            self.CRS_pos_text = Label(self.KMALL_op, text="GPS Height Device")
+            self.CRS_pos_text.grid(row=2, column=0, sticky=W)
+            self.CRS_pos.grid(row=2, column=1, sticky=W, padx=0)
+##            self.GPSH_D = StringVar()
+##            self.GPS_h = Entry(self.KMALL_op, width=10, textvariable=self.GPSH_D, state='disabled')
+##            self.GPS_h_text = Label(self.KMALL_op, text="GPS Height Device")
+##            self.GPS_h_text.grid(row=2, column=0, sticky=W)
+##            self.GPS_h.grid(row=2, column=1, sticky=W, padx=1)
 
             ##Heave Device
             self.Heave_D = StringVar()
